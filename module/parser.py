@@ -9,8 +9,6 @@ import config as conf
 
 
 class CoronaTracker:
-    data = ""
-
     def __init__(self):
         self.statistic = {}
         self.countries = {}

@@ -20,3 +20,10 @@ python3 or python2
     ```
     CoronaTracker.get_country_statistics()
     ```
+
+# Service
+## Telegram bot is now available!
+
+![telegram-bot](./images/telegram_bot.png)
+- Command: /corona2
+- Bot Link: [@nyong_bot](https://t.me/nyong_bot)
