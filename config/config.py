@@ -34,4 +34,7 @@ country_map = {
     "西班牙": "Spain",
     "瑞典": "Sweden",
     "印度": "India",
+    "斯里兰卡": "Sri Lanka",
+    "柬埔寨": "Cambodia",
+    "尼泊尔": "Nepal",
 }
