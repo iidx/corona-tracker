@@ -13,13 +13,13 @@ class CoronaTracker:
 
     def __init__(self):
         self.statistic = {}
-        self.countrys = {}
+        self.countries = {}
 
     def get_all_statistics(self):
         return self.statistic
 
     def get_country_statistics(self):
-        return self.countrys
+        return self.countries
 
     def parse(self):
         self.data = self._request_base_data()
@@ -93,9 +93,9 @@ class CoronaTracker:
                 chinese=_json["provinceName"], china_flag=china_flag
             )
 
-            if not country_name in self.countrys.keys():
-                self.countrys[country_name] = country_obj
+            if not country_name in self.countries.keys():
+                self.countries[country_name] = country_obj
             else:
-                origin = self.countrys[country_name]
+                origin = self.countries[country_name]
                 for key in origin.keys():
                     origin[key] += country_obj[key]
