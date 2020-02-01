@@ -26,7 +26,6 @@ class CoronaTracker:
         self._parser()
 
     def _parser(self):
-        self.statistic = self._parse_statistics()
         if not self.data:
             return
         for re_str in [conf.china_regex, conf.global_regex]:
@@ -37,18 +36,22 @@ class CoronaTracker:
             if json_data is None:
                 continue
             self._map_country_object(json_data, china_flag)
+        self.statistic = self._parse_global_statistics()
 
-    def _parse_statistics(self):
+    def _parse_global_statistics(self):
         data = self._parse_json_from_data(conf.statistic_regex)
         dt_string = datetime.fromtimestamp(data["modifyTime"] / 1000)
         dt_string = dt_string.strftime("%Y-%m-%d %H:%M:%S")
         statistic = {
-            "updated_at": dt_string,
-            "confirmed": data["confirmedCount"],
-            "suspected": data["suspectedCount"],
-            "cured": data["curedCount"],
-            "dead": data["deadCount"],
+            "confirmed": 0,
+            "suspected": 0,
+            "cured": 0,
+            "dead": 0
         }
+        for k, v  in self.countries.items():
+            for key in statistic.keys():
+                statistic[key] += v[key]
+        statistic['updated_at'] = dt_string
         return statistic
 
     def _request_base_data(self):
