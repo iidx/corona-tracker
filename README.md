@@ -2,8 +2,9 @@
 Convert Novel coronavirus(2019-nCoV) statistical data from the Chinese medical community(dxy.cn) to json format
 
 # Requirements
+need to ```python``` module below.
 ```
-python3 or python2
+pip install requests
 ```
 
 # Usage
@@ -26,4 +27,4 @@ python3 or python2
 
 ![telegram-bot](./images/telegram_bot.png)
 - Command: /corona2
-- Bot Link: [@nyong_bot](https://t.me/nyong_bot)
+- Bot Link: [@nyong_bot](https://t.me/nyong_bot)`
