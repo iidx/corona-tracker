@@ -13,10 +13,12 @@ class CoronaTracker:
         self.statistic = {}
         self.countries = {}
 
-    def get_all_statistics(self):
+    @property
+    def all_statistic(self):
         return self.statistic
 
-    def get_country_statistics(self):
+    @property
+    def country_statistic(self):
         return self.countries
 
     def parse(self):

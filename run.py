@@ -7,11 +7,11 @@ if __name__ == '__main__':
     ct.parse()
 
     print(json.dumps(
-        ct.get_all_statistics(),
+        ct.all_statistic,
         indent=4,
     ))
 
     print(json.dumps(
-        ct.get_country_statistics(),
+        ct.country_statistic,
         indent=4,
     ))

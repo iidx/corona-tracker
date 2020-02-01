@@ -10,7 +10,7 @@ china_regex = r"window\.getAreaStat \= (.+?)\}catch\(e\)\{\}"
 chinese_encode = "ISO-8859-1"
 
 nocn_country_map = {
-    "香港": "HongKong",
+    "香港": "Hong Kong",
     "台湾": "Taiwan",
 }
 

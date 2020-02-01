@@ -11,14 +11,14 @@ python3 or python2
 
     ![corona-tracker-all](./images/corona_tracker_all.png)
     ```
-    CoronaTracker.get_all_statistics()
+    CoronaTracker.all_statistic
     ```
 
 2. Get infection statistics for all countries
 
     ![corona-tracker-country](./images/corona_tracker_country.png)
     ```
-    CoronaTracker.get_country_statistics()
+    CoronaTracker.country_statistic
     ```
 
 # Service
