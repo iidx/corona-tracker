@@ -3,7 +3,7 @@ Convert Novel coronavirus(2019-nCoV) statistical data from the Chinese medical c
 
 # Requirements
 ```
-python3
+python3 or python2
 ```
 
 # Usage
