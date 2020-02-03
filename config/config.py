@@ -12,6 +12,7 @@ chinese_encode = "ISO-8859-1"
 nocn_country_map = {
     "香港": "Hong Kong",
     "台湾": "Taiwan",
+    "澳门": "Macao",
 }
 
 country_map = {
