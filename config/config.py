@@ -37,4 +37,8 @@ country_map = {
     "斯里兰卡": "Sri Lanka",
     "柬埔寨": "Cambodia",
     "尼泊尔": "Nepal",
+    "菲律宾": "Philippines",
+    "钻石公主号邮轮": "Japan (Diamond Princess)",
+    "埃及": "Egypt",
+    "比利时": "Belgium"
 }
