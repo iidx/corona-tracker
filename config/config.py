@@ -4,7 +4,7 @@
 parse_url = "https://3g.dxy.cn/newh5/view/pneumonia"
 
 statistic_regex = r"window\.getStatisticsService = (.+?)\}catch\(e\)\{\}"
-global_regex = r"window\.getListByCountryTypeService2 \= (.+?)\}catch\(e\)\{\}"
+global_regex = r"window\.getListByCountryTypeService2true \= (.+?)\}catch\(e\)\{\}"
 china_regex = r"window\.getAreaStat \= (.+?)\}catch\(e\)\{\}"
 
 chinese_encode = "ISO-8859-1"
