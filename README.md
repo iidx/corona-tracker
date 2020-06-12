@@ -1,5 +1,5 @@
 # Corona-Tracker
-Convert Novel coronavirus(2019-nCoV) statistical data from the Chinese medical community(dxy.cn) to json format
+Convert Coronavirus disease 2019(COVID-19) statistical data from the Chinese medical community(dxy.cn) to json format
 
 # Requirements
 need to ```python``` module below.
